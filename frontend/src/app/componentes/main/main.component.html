@@ -9,12 +9,12 @@
       </div>
       <div class="cartelInicio poner600">
         <div>
-        <div *ngIf="!loading">
+        <!-- <div *ngIf="!loading">
         <button *ngIf="publiInicio" (click)="publiInicio = false" class="btn btn-danger" style="border-radius: 100%;position:absolute;top:50px; right: 10px;">X</button>
         <a *ngIf="publiInicio"   href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-taller.html" target="_blank">
           <img src="../../../assets/Indice Cartel.png" width="100%" alt=""  >
           </a>
-      </div>
+      </div> -->
     </div>
       </div>
       <app-a-portada  *ngIf="!loading"  [data]="articulos[13]" ></app-a-portada>
@@ -189,7 +189,7 @@
 
       <div style="border-bottom:20px solid rgb(51, 51, 51);" >
         <br>
- <div class="row " [ngClass]="{'imagenLoading': loading}"  style="background-image: url('../../../assets/fondo2.png') ;
+ <div class="row "  style="background-image: url('../../../assets/fondo2.png') ;
          background-repeat: none; width: 100%; height: 550px;margin-left:0px; margin-top: -230px; ">
 <div  *ngIf="!loading  " class="flex-container quitar600 ">
   <div class="flex-items " >
@@ -219,7 +219,7 @@
     </div>
       </div>
 
-      <div class="flex-items quitar1000"style="align-text: left;margin-top:370px;">
+      <div class="flex-items quitar1000 acom"style="align-text: left;margin-top:370px;" >
         <div style="text-align:left;" >
           <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
           <img class="logonm" src="../../../assets/logonm.png" alt=""  >
@@ -245,8 +245,8 @@
           <div  *ngIf="!loading "  style="margin-top: 300px;">
           <div>
               <div style="text-align: center;">
-                <a href=" culturademontania.org.ar" target="_blank">
-              <img src="../../../assets/LogoCCAM_Entero.png" alt="" width="150px" >
+                <a href=" culturademontania.org.ar" target="_blank" >
+              <img src="../../../assets/LogoCCAM_Entero.png" alt="" class="imgmobile" >
             </a>
           </div>
               </div>

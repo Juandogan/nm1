@@ -23,7 +23,7 @@
 
 
 
-
+ .numeroEdicion{display: none;}
 .acom{margin-top:370px; }
 .fuenteTest{  font-family: 'Oswald', sans-serif;}
 .publiMobile{display:none}
@@ -500,6 +500,8 @@ ul{margin:0px; padding:5px;margin-left: 15px}
             }
 
 @media (max-width:600px){
+  .indice{display: none;}
+  .numeroEdicion{display: inline;}
   .carousel{height:400px!important; }
   .FlexContainer {
     display: flex;

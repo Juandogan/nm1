@@ -1,0 +1,288 @@
+<div class="cuerpo margenL margenR" style="z-index:1000 ;" >
+    <div class="barraInfo">
+      <h2 *ngIf="!loading"  class=" texto  quitar600 " style="font-size:12px;padding:5px"><b style="text-transform:uppercase;">Nro. {{numeroEdicion}} | MES:  {{articulos[13]?.titulo}} | AÑO 2023</b></h2>
+      <div style="text-align: center;">
+      <div *ngIf="loading " class="loadingio-spinner-dual-ring-xg1vnrf2b6o" style=" margin-top: 150px; min-height:1000px;"><div class="ldio-z7fu6e1den">
+
+        <div></div><div><div></div></div>
+        </div></div>
+      </div>
+      <div class="cartelInicio poner600">
+        <div>
+        <div *ngIf="!loading">
+        <button *ngIf="publiInicio" (click)="publiInicio = false" class="btn btn-danger" style="border-radius: 100%;position:absolute;top:50px; right: 10px;">X</button>
+        <a *ngIf="publiInicio"   href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-taller.html" target="_blank">
+          <img src="../../../assets/Indice Cartel.png" width="100%" alt=""  >
+          </a>
+      </div>
+    </div>
+      </div>
+      <app-a-portada  *ngIf="!loading"  [data]="articulos[13]" ></app-a-portada>
+
+  <!-- <img src="../../../assets/fondo2.png" alt="" style="margin-top:-260px"> -->
+
+        <div  *ngIf="!loading" style="text-align: left;">
+        <h1 class="indice" >INDICE - {{articulos[13]?.titulo}} </h1>
+
+        <app-b-indice [data]="articulos[13]" ></app-b-indice>
+        <a class="quitar600" href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-taller.html" target="_blank">
+          <img src="../../../assets/Indice Cartel.png" width="100%" alt=""  >
+          </a>
+
+  <br>
+   <div style="color: white;">
+
+    <h1 class="indice subefuente fuenteTest" >EDITORIAL - NRO {{numeroEdicion}} | {{articulos[13]?.titulo}} 2023</h1>
+  <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png');height: 800px; ">
+  <div>
+     <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;">
+   <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
+    <p class="editorialParrafo"
+     [innerHTML]=saltos2(this.editorial)|sanetizer >
+     </p>
+
+
+  <br>
+<br>
+
+<br><br>
+
+
+  </div>
+
+</div>
+<!-- <div class="poner600">
+  <img src="../../../assets/image 12.png" width="100%" height="200px" alt="" style="margin-top: 0px;">
+  </div> -->
+
+<div class="row quitar600" style="margin-top:30px;  padding-right:35px ">
+  <div class="col-4 xl-12 ">
+    <div >
+     <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
+       <img src="../../../assets/banner Noticias.png" width="100%" height="500px" alt="" style="padding-left:20px"></a>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div >
+     <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-entrenamiento.html" target="_blank">
+       <img src="../../../assets/otros.png" width="100%" height="500px" alt=""></a>
+    </div>
+  </div>
+
+  <div class="col-4" style="padding-right: 0px">
+    <div >
+     <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
+       <img src="../../../assets/formarparte.png" width="100%" height="500px"  alt=""></a>
+    </div>
+  </div>
+
+</div>
+<br>
+
+<div class="carousel">
+  <br>
+
+<div style="background-color: #8b5a00; margin-top: -40px;">
+
+
+
+</div>
+
+
+
+<!-- <app-carousel  [data]="articulos[9]"  ></app-carousel> -->
+<app-carousel-revista></app-carousel-revista>
+</div>
+<!-- <app-carousel2 [items]="articulos" [data]="articulos"></app-carousel2>  -->
+
+
+
+  <br><br>
+      </div>
+
+    <!--
+  <div style="margin-right: 20px;">
+    <h1 style="margin-left:20px; margin-top:20px">Novedades</h1>
+    <div class="row" style="margin:0px; padding:0pc">
+      <div class="col-4" style="padding-right: 0px; padding-left:20px">
+        <img src="../../../assets/foto001.jpg" alt=""  width="100%">
+      </div >
+    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
+      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
+        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin:0px; padding:0pc">
+      <div class="col-4" style="padding-right: 0px; padding-left:20px">
+        <img src="../../../assets/foto003.jpg" alt=""  width="100%">
+      </div >
+    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
+      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
+        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="margin:0px; padding:0pc">
+      <div class="col-4" style="padding-right: 0px; padding-left:20px">
+        <img src="../../../assets/foto001.jpg" alt=""  width="100%">
+      </div >
+    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
+      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
+        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div style="margin-right: 20px; position: relative;">
+    <h1 style="position: absolute;z-index: 1000;top:20px; left: 30px;font-size: 80px;
+    color:white; text-shadow: 1px 1px 10px black; ">Cumbres</h1>
+    <h1 style="position: absolute;z-index: 1000;top:85px; left: 38px;font-size: 80px;
+    color:white; text-shadow: 1px 1px 10px black; ">borrascosas</h1>
+
+  <h1 style="position: absolute;z-index: 1000;top:175px; left: 43px;font-size: 20px; width: 400px;
+  color:white; text-shadow: 1px 1px 10px black; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores placeat doloremque error, aperiam nisi voluptatum culpa voluptatibus ullam sed facere, maiores quasi earum architecto dolor nobis, dolorum necessitatibus temporibus.</h1>
+
+  <button class="btn btn-warning" style="position: absolute;z-index: 1000;top:360px; left: 43px;">Ver articulo</button>
+  <img src="../../../assets/montanismo_beneficios_mindfilness_0.jpg" width="98%"  alt="" style="margin-left:20px; filter: brightness(0.5);height: 600px;object-fit: cover;">
+  <div >
+  <br>
+  </div>
+  </div>
+  <div>
+    <div class="row" style="margin:0px; padding:0px">
+      <div class="col-4" style="margin:0px; padding:0px; " >
+        <div style="position: relative;">
+        <img src="../../../assets/foto001.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
+
+          <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
+          <p style="position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
+
+      </div>
+      </div>
+      <div class="col-4">
+        <div style="margin-right: 0px;position: relative;">
+          <img src="../../../assets/montanismo_beneficios_mindfilness_0.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
+
+            <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
+            <p style="margin-right: 10px;position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div style="position: relative;">
+          <img src="../../../assets/foto003.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
+
+            <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
+            <p style="margin-right: 20px; position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
+
+        </div>
+      </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
+  </div> -->
+
+
+      </div><!-- fin de fondo orange -->
+
+      <div style="border-bottom:20px solid rgb(51, 51, 51);" >
+        <br>
+ <div class="row " [ngClass]="{'imagenLoading': loading}"  style="background-image: url('../../../assets/fondo2.png') ;
+         background-repeat: none; width: 100%; height: 550px;margin-left:0px; margin-top: -230px; ">
+<div  *ngIf="!loading  " class="flex-container quitar600 ">
+  <div class="flex-items " >
+    <div style="text-align:center ;" >
+      <a href="http://www.culturademontania.org.ar/">
+    <img class="logoCCAM" src="../../../assets/LogoCCAM_Entero.png" alt="" >
+  </a>
+  </div>
+    </div>
+
+    <div class="flex-items" style="margin-top:390px;min-width:450px">
+      <div style="text-align:left; margin-left: 10px;" >
+  <a href="mailto:info@culturademontania.org.ar" style="color:white">
+    <p style="color: white; font-size:18px">Mail: info@culturademontania.org.ar</p>
+  </a>
+
+    <p style="color: white; font-size:18px; margin-top:-20px">WhatsApp: (+54-011) 15-3093-9814</p>
+
+    <a href="https://www.instagram.com/ccam_arg/" target="_blank" style="color:white">
+    <p style="color: white; font-size:18px; margin-top:-22px">Instagram: @ccam_arg</p>
+  </a>
+  <a href="https://www.facebook.com/ccamontania/" target="_blank" style="color:white">
+    <p style="color: white; font-size:18px; margin-top:-22px">www.facebook.com/ccamontania  </p>
+    </a>
+
+
+    </div>
+      </div>
+
+      <div class="flex-items quitar1000"style="align-text: left;margin-top:370px;">
+        <div style="text-align:left;" >
+          <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
+          <img class="logonm" src="../../../assets/logonm.png" alt=""  >
+        </a>
+
+      </div>
+        </div>
+
+        <div class="flex-items quitar1000"style="margin-top:370px;">
+          <div style="text-align:left;margin-top:25px"  >
+        <p style="color:white; font-size: 20px;">Contáctate y comenzá</p>
+        <p style="color:white; margin-top:-21px; font-size: 20px;">la aventura de integrarte</p>
+        <p style="color:white; margin-top:-21px; font-size: 20px;">a la red cultural</p>
+
+
+        </div>
+          </div>
+
+        </div>
+
+          <!-- logos y texto fooder mobile -->
+        <div class="mobile" style="width:100%!important">
+          <div  *ngIf="!loading "  style="margin-top: 300px;">
+          <div>
+              <div style="text-align: center;">
+                <a href=" culturademontania.org.ar" target="_blank">
+              <img src="../../../assets/LogoCCAM_Entero.png" alt="" width="150px" >
+            </a>
+          </div>
+              </div>
+
+              <div style="text-align: center;">
+                <div >
+            <a href="mailto:info@culturademontania.org.ar" style="color:white">
+              <p style="color: white; font-size:13px!important">Mail: info@culturademontania.org.ar</p>
+            </a>
+
+              <p style="color: white; font-size:13px!important;margin-top:-18px">WhatsApp: (+54-011) 15-6170-1971</p>
+              <!-- <p style="color: white; font-size:13px!important;margin-top:-18px">WhatsApp: (+54-011) 15-3093-9814</p> -->
+              <a href="https://www.instagram.com/ccam_arg/" target="_blank" style="color:white">
+              <p style="color: white; font-size:13px!important; margin-top:-22px">Instagram: @ccam_arg</p>
+            </a>
+            <a href="https://www.facebook.com/ccamontania/" target="_blank" style="color:white">
+              <p style="color: white; font-size:13px!important; margin-top:-19px">www.facebook.com/ccamontania  </p>
+              </a>
+
+
+              </div>
+                </div>
+
+
+                  </div>
+
+
+
+        </div>
+      <!-- fin de logos y texto fooder mobile -->
+    </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+

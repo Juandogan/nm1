@@ -186,7 +186,8 @@ font-size: 18px;
 }
 
 .fondoEditorial {background-color: #3E2800;
-
+  object-fit: cover; background-image: url('../../../assets/1.png');
+  height: 290px;
    margin-left: 20px;
    margin-right: 20px}
 
@@ -398,7 +399,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 
                 .quitarTextoLogo{display:none }
 
-
+                .fondoEditorial {height: 320px;}
                 }
 
 
@@ -499,7 +500,14 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 
             }
 
+            @media (max-width:770px){
+              .fondoEditorial{
+                height: 320px;}
+
+             }
+
 @media (max-width:600px){
+  .fondoEditorial{height: 220px!important;}
   .indice{display: none;}
   .numeroEdicion{display: inline;}
   .carousel{height:400px!important; }
@@ -514,6 +522,35 @@ ul{margin:0px; padding:5px;margin-left: 15px}
     height: 80vh;
     overflow: auto;
     flex-direction: row;
+}
+
+
+@media (max-width:500px){
+
+  .fondoEditorial{height: 260px!important;}
+}
+
+@media (max-width:400px){
+
+  .fondoEditorial{height: 290px!important;}
+}
+
+@media (max-width:354px){
+
+  .fondoEditorial{height: 310px!important;}
+}
+
+@media (max-width:342px){
+
+  .fondoEditorial{height: 330px!important;}
+}
+@media (max-width:306px){
+
+  .fondoEditorial{height: 340px!important;}
+}
+@media (max-width:296px){
+
+  .fondoEditorial{height: 370px!important;}
 }
 
 
@@ -535,7 +572,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 p{font-size: 14px!important;}
   .imagenLoading{ position:absolute; bottom:-20px;  right: 0px ; left:0px ;}
 .fondoEditorial{
-      height: 770px;
+  height: 290px;
       background-image: url('../../../assets/fondoEditorial.jpg');
       object-fit: cover;
       margin-left: 0px;

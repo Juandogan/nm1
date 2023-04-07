@@ -21,7 +21,7 @@
 
 
 
-
+ .imgAparece{display: none;}
 
  .numeroEdicion{display: none;}
 .acom{margin-top:370px; }
@@ -503,9 +503,13 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 
             }
 
-            @media (max-width:770px){
+            @media (max-width:766px){
               .fondoEditorial{
                 height: 320px;}
+              
+              .imgSobrante{ padding:20px; padding-left: 30px; padding-right: 30px; padding-right: 10px; }
+              .imgAparece{display:block; padding: 30px; margin-top:-10px; padding-left: 13px; padding-right: 10px; }
+
 
              }
 

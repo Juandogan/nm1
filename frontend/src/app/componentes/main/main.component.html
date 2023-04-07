@@ -17,6 +17,7 @@
       </div> -->
     </div>
       </div>
+      <div>
       <app-a-portada  *ngIf="!loading"  [data]="articulos[14]" ></app-a-portada>
       <div  *ngIf="!loading"  class="row quitar600" style="margin-top:5px;  padding-right:35px ">
         <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4 ">
@@ -33,15 +34,22 @@
           </div>
         </div>
     
-        <div class="col-sm-4	col-md-4	col-lg-4	col-xl-4	col-xxl-4 quitar" style="padding-right: 0px" >
+        <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4  imgSobrante quitar" style="padding-right: 0px" >
           <div >
            <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
              <img src="../../../assets/formarparte.png" width="100%" height="500px"  alt=""></a>
           </div>
         </div>
+
+        <div class="imgAparece col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4  imgSobrante quitar" style="padding-right: 0px" >
+          <div >
+           <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
+             <img src="../../../assets/cartel.png" width="100%" height="500px"  alt=""></a>
+          </div>
+        </div>
       </div>
     
-  <!-- <img src="../../../assets/fondo2.png" alt="" style="margin-top:-260px"> -->
+
 
         <div  *ngIf="!loading" style="text-align: left;">
         <h1 class="indice" style="margin-top: 20px;" >INDICE - {{articulos[14]?.titulo}} <span class="numeroEdicion"> - Nro. {{numeroEdicion}} </span> </h1>
@@ -54,18 +62,12 @@
   <br>
    <div style="color: white;">
 
-   <!-- <h1 class="indice subefuente fuenteTest" >EDITORIAL - NRO {{numeroEdicion}} | {{articulos[13]?.titulo}} 2023</h1> -->
    <br>
   <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png');  ">
   <div>
-     <!-- <img class="responsi indice" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> -->
-   <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
-   <br>
-    <p class="editorialParrafo"
 
-     [innerHTML]=saltos2(this.editorial)|sanetizer
-      >
-     </p>
+   <br>
+    <p class="editorialParrafo" [innerHTML]=saltos2(this.editorial)|sanetizer></p>
 
 
   <br>
@@ -107,89 +109,6 @@
 
   <br><br>
       </div>
-
-    <!--
-  <div style="margin-right: 20px;">
-    <h1 style="margin-left:20px; margin-top:20px">Novedades</h1>
-    <div class="row" style="margin:0px; padding:0pc">
-      <div class="col-4" style="padding-right: 0px; padding-left:20px">
-        <img src="../../../assets/foto001.jpg" alt=""  width="100%">
-      </div >
-    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
-      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
-        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
-      </div>
-    </div>
-    <br>
-    <div class="row" style="margin:0px; padding:0pc">
-      <div class="col-4" style="padding-right: 0px; padding-left:20px">
-        <img src="../../../assets/foto003.jpg" alt=""  width="100%">
-      </div >
-    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
-      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
-        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
-      </div>
-    </div>
-    <br>
-    <div class="row" style="margin:0px; padding:0pc">
-      <div class="col-4" style="padding-right: 0px; padding-left:20px">
-        <img src="../../../assets/foto001.jpg" alt=""  width="100%">
-      </div >
-    <div class="col-8" style="background-color: rgba(0, 0, 0, 0.548);margin-right: 0px!important; ">
-      <h4 style="position:absolute; font-size:  15px;padding:5px;  background-color: orange;margin-left: 18px; margin-top:15px">MEDIO AMBIENTE</h4>
-        <h1 style="font-weight: 800; border-radius: 15px; color:white; padding: 20px; font-size: 30px;margin-top:35px" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste repellat magnam blanditiis soluta.</h1>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div style="margin-right: 20px; position: relative;">
-    <h1 style="position: absolute;z-index: 1000;top:20px; left: 30px;font-size: 80px;
-    color:white; text-shadow: 1px 1px 10px black; ">Cumbres</h1>
-    <h1 style="position: absolute;z-index: 1000;top:85px; left: 38px;font-size: 80px;
-    color:white; text-shadow: 1px 1px 10px black; ">borrascosas</h1>
-
-  <h1 style="position: absolute;z-index: 1000;top:175px; left: 43px;font-size: 20px; width: 400px;
-  color:white; text-shadow: 1px 1px 10px black; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores placeat doloremque error, aperiam nisi voluptatum culpa voluptatibus ullam sed facere, maiores quasi earum architecto dolor nobis, dolorum necessitatibus temporibus.</h1>
-
-  <button class="btn btn-warning" style="position: absolute;z-index: 1000;top:360px; left: 43px;">Ver articulo</button>
-  <img src="../../../assets/montanismo_beneficios_mindfilness_0.jpg" width="98%"  alt="" style="margin-left:20px; filter: brightness(0.5);height: 600px;object-fit: cover;">
-  <div >
-  <br>
-  </div>
-  </div>
-  <div>
-    <div class="row" style="margin:0px; padding:0px">
-      <div class="col-4" style="margin:0px; padding:0px; " >
-        <div style="position: relative;">
-        <img src="../../../assets/foto001.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
-
-          <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
-          <p style="position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
-
-      </div>
-      </div>
-      <div class="col-4">
-        <div style="margin-right: 0px;position: relative;">
-          <img src="../../../assets/montanismo_beneficios_mindfilness_0.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
-
-            <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
-            <p style="margin-right: 10px;position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
-
-        </div>
-      </div>
-      <div class="col-4">
-        <div style="position: relative;">
-          <img src="../../../assets/foto003.jpg" width="100%" height="600px" alt="" style="padding: 10px;padding-left: 20px; object-fit: cover;filter:grayscale(1); filter: brightness(0.5);" >
-
-            <h1 style="text-shadow: 2px 2px 6px black; position: absolute;top:60%; color:white;left:10% ; line-height: 34px;">Lorem ipsum dolor sit amet consectetur </h1>
-            <p style="margin-right: 20px; position: absolute;top:78%; line-height: 19px; color:white;left:10%"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non modi illum reiciendis repudiandae aut. Ipsum nesciunt nisi ea, natus corporis beatae. Placeat quo, itaque consequatur officia similique optio illo.</p>
-
-        </div>
-      </div>
-
-    </div>
-    <br><br><br><br><br><br><br>
-  </div> -->
 
 
       </div><!-- fin de fondo orange -->

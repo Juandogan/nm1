@@ -74,6 +74,16 @@
 
   }
 
+  .indice1{
+  
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:white}
+  
 
 
   /* .titulo :hover {
@@ -148,12 +158,12 @@ a{text-decoration: none;}
     .titulo {
 
       font-family:'Jost', sans-serif;
-      font-size: 22px;
+      font-size: 25px;
       letter-spacing: -1px;
       /* letter-spacing: 1px; */
 
-      line-height: 22px;
-      color:rgb(0, 0, 0);
+      line-height: 25px;
+      color:rgb(255, 255, 255);
 
       padding:12px;
       border-radius:4px;

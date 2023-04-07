@@ -87,8 +87,10 @@ anio=""
         this.numeroEdicion = 147
         this.anio ="2023"
       }
+   
 
 
+      
 
     for(const post of this.articulos){
       var aux = post?.categoria
@@ -103,8 +105,8 @@ anio=""
 
       this.articulos.push(aux)
       console.log('xxx',this.articulos)
-      this.numeroEdicion = 148}
-     else{this.numeroEdicion = 148}
+      this.numeroEdicion = 149}
+     else{this.numeroEdicion = 149}
       }
 
     }

@@ -5,6 +5,16 @@ export const carouselDataItems : Carousel[] = [
     {
         id: 0 ,
         fecha: '',
+        titulo:'Marzo 2023 - Nº 148',
+        subtitulo:'https://www.culturademontania.org.ar/Noticias/03_2023/revista_digital_ccam_ini_032023.html',        
+        link:'',
+        image:'../../../assets/tapabril.png',
+        order:'',
+        marginLeft :0    
+    },
+    {
+        id: 0 ,
+        fecha: '',
         titulo:'Febrero 2023 - Nº 147',
         subtitulo:'http://www.culturademontania.org.ar/Noticias/02_2023/revista_digital_ccam_ini_022023.html',        
         link:'',

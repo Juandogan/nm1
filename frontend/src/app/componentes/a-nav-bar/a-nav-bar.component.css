@@ -27,17 +27,17 @@
 
 h1{font-family: 'Roboto Slab', serif;}
 .quienesSomos{
-   left:220px;
-   font-size:12px;
-   margin-top:12px; 
+   left:230px;
+   font-size:16px;
+   margin-top:7px; 
    color:rgb(255, 255, 255); 
    position: absolute;
 }
 
 .formarParte{
-   left:380px; 
-   font-size:12px; 
-   margin-top:12px; 
+   left:420px; 
+   font-size:16px; 
+   margin-top:7px; 
    color:rgb(255, 255, 255);
    position: absolute;
 }

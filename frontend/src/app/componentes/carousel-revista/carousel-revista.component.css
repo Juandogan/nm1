@@ -16,7 +16,7 @@ color: rgb(255, 255, 255);
 border-radius: px;
 margin-top:4px ;
 margin-right: 10px;
-background-color: rgb(94, 72, 0);
+
 padding-left: 10px; 
 padding-top: 0px;
   }
@@ -33,9 +33,9 @@ a{
     margin: 0px;
     text-align: center;
     margin-bottom: 10px;
-    background-color: #8b5a00;
+    color:white;
 border-radius: 3px;
-color:rgb(255, 208, 121); text-transform: uppercase;
+ text-transform: uppercase;
 
       }
 
@@ -48,16 +48,24 @@ color:rgb(255, 208, 121); text-transform: uppercase;
 
 
   .principal  {
+    background-color: rgb(99, 84, 0);
 
-    background-color: rgb(59, 40, 4); text-align: left; margin-left: 10px; margin-right: 10px; border-radius: 4px;
+    text-align: left; margin-left: 10px; margin-right: 10px; border-radius: 4px;
      
     }
     
-
+    @media (max-width:700px)
+    {
+    .ptitulo{
+      margin-top: 10px;
+    }
+  }
 
     @media (max-width:600px)
     {
-
+.ptitulo{
+  margin-top: 10px;
+}
       
   .principal  {
 
@@ -65,4 +73,17 @@ color:rgb(255, 208, 121); text-transform: uppercase;
      
     }
     
+
+
+
     }
+
+    
+  
+    
+    @media (max-width:700px)
+    {
+        .quitar700{display: none;}
+        p{background-color: transparent;}
+    }
+

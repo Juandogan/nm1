@@ -115,7 +115,7 @@ anio=""
 
     console.log('xxx',this.articulos)
 
-    this.editorial = this.articulos[13].autor
+    this.editorial = this.articulos[14].autor
       });//fin de subscribe
     } //fin de pedirProductosthis.
 

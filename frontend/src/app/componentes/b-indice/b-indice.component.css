@@ -30,7 +30,7 @@
  background-image: url('../../../assets/fondoindex.png');
    margin:20px; object-fit:cover;
   margin-top: 0px;
-  height:900px
+  height:100%
 }
 
   .imagen{height: 500px; margin-top:50px; border: 20px solid orange ;object-fit: cover; }

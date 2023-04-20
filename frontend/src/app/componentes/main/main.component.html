@@ -17,7 +17,7 @@
       </div> -->
     </div>
       </div>
-      <div>
+      <div style="margin-left: 0px; padding: 0px;">
       <app-a-portada  *ngIf="!loading"  [data]="articulos[14]" ></app-a-portada>
       <div  *ngIf="!loading"  class="row quitar600" style="margin-top:5px;  padding-right:35px ">
         <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4 ">
@@ -63,15 +63,14 @@
    <div style="color: white;">
 
    <br>
-  <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png');  ">
+  <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png'); height: 100%!important;  ">
   <div>
 
    <br>
     <p class="editorialParrafo" [innerHTML]=saltos2(this.editorial)|sanetizer></p>
 
 
-  <br>
-<br>
+
 
 <br><br>
 
